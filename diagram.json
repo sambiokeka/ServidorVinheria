@@ -1,0 +1,49 @@
+{
+"version": 1,
+"author": "Sambio Keka",
+"editor": "wokwi",
+"parts": [
+{ "type": "wokwi-breadboard-half", "id": "bb1", "top": -31.8, "left": -16.4, "attrs": {} },
+{ "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -28.8, "left": -167.96, "attrs": {} },
+{ "type": "wokwi-dht22", "id": "dht1", "top": -28.5, "left": 119.4, "attrs": {} },
+{
+"type": "wokwi-photoresistor-sensor",
+"id": "ldr1",
+"top": -29.1,
+"left": -34.3,
+"rotate": 90,
+"attrs": {}
+},
+{
+"type": "wokwi-resistor",
+"id": "r1",
+"top": 129.6,
+"left": 28.25,
+"rotate": 90,
+"attrs": { "value": "1000" }
+}
+],
+"connections": [
+[ "esp:TX", "$serialMonitor:RX", "", [] ],
+[ "esp:RX", "$serialMonitor:TX", "", [] ],
+[ "esp:5V", "bb1:bp.1", "red", [ "h-19.05", "v19.2", "h172.8", "v-38.4" ] ],
+[ "esp:GND.1", "bb1:bn.1", "black", [ "h-19.05", "v105.6", "h67.2" ] ],
+[ "dht1:VCC", "bb1:14b.f", "", [ "$bb" ] ],
+[ "dht1:SDA", "bb1:15b.f", "", [ "$bb" ] ],
+[ "dht1:NC", "bb1:16b.f", "", [ "$bb" ] ],
+[ "dht1:GND", "bb1:17b.f", "", [ "$bb" ] ],
+[ "ldr1:VCC", "bb1:7b.f", "", [ "$bb" ] ],
+[ "ldr1:GND", "bb1:6b.f", "", [ "$bb" ] ],
+[ "ldr1:DO", "bb1:5b.f", "", [ "$bb" ] ],
+[ "ldr1:AO", "bb1:4b.f", "", [ "$bb" ] ],
+[ "r1:1", "bb1:6b.h", "", [ "$bb" ] ],
+[ "r1:2", "bb1:bn.5", "", [ "$bb" ] ],
+[ "bb1:7b.g", "bb1:bp.6", "green", [ "v0" ] ],
+[ "ldr1:AO", "esp:34", "green", [ "v0" ] ],
+[ "esp:15", "bb1:15b.g", "green", [ "v0" ] ],
+[ "dht1:VCC", "bb1:bp.11", "red", [ "v0" ] ],
+[ "dht1:GND", "bb1:bn.14", "black", [ "v0" ] ]
+],
+"dependencies": {}
+
+}

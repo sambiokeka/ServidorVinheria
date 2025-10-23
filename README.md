@@ -136,11 +136,11 @@ Siga estes passos para configurar e executar o projeto em um novo ambiente.
 * **Body (JSON):**
     ```json
     {
-        "description": "Salvar historico da Vinheria no STH-Comet",
+        "description": "Salvar historico da Vinheria CORRETO",
         "subject": {
             "entities": [
                 {
-                    "id": "Vinheria:teste",
+                    "id": "Vinheria:teste_erick_jooji_1espv",
                     "type": "Vinheria"
                 }
             ]
@@ -160,6 +160,6 @@ Siga estes passos para configurar e executar o projeto em um novo ambiente.
 
 * **Objetivo:** Consultar os dados salvos ao longo do tempo no STH-Comet para provar que a rastreabilidade está funcionando.
 * **Método:** `GET`
-* **URL:** `http://{{IP_publico_da_sua_maquina_virtual}}:8666/STH/v1/contextEntities/type/Vinheria/id/Vinheria:teste/attributes/t?lastN=10`
+* **URL:** `http://{{IP_publico_da_sua_maquina_virtual}}:8666/STH/v1/contextEntities/type/Vinheria/id/Vinheria:teste_erick_jooji_1espv/attributes/t?lastN=10`
 
 * ***Observação:*** *Lembre-se de esperar pelo menos 1 minuto após criar a subscrição para que os dados sejam acumulados.*

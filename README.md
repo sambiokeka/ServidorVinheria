@@ -1,3 +1,8 @@
+Erick Jooji (RM: 564482)
+Luiz Dalboni (RM: 564189)
+Matheus Tozarelli (RM: 563490)
+Rafael Lorenzini (RM: 563643)
+
 # Projeto de Monitoramento de Vinheria com FIWARE e ESP32
 
 Este projeto implementa uma solução de IoT para o monitoramento em tempo real e histórico de sensores (temperatura, umidade e luminosidade) de uma vinheria, utilizando a plataforma FIWARE. A solução foi desenvolvida para o caso de estudo da "Vinheria Agnello".
